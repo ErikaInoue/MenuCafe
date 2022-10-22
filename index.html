@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Menu Café</title>
+        <!-- definição do conjunto de bibliotecas ncessárias -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+            integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+            crossorigin="anonymous"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous"
+        />
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"
+        ></script>
+        <!-- fim da definição das bibliotecas -->
+        <link rel="stylesheet" href="./styles/formulario.css" />
+        <link rel="stylesheet" href="./styles/produto.css" />
+        <link rel="stylesheet" href="./styles/fundo.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Raleway:wght@100;300;400;700&family=Rokkitt:wght@100&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="background"></div>
+        <div class="backdrop"></div>
+        <div class="sessao-produto">
+            <div class="container">
+                <!--class do bootstrap-->
+                <div class="row d-flex justify-content-center">
+                    <!--produto1-->
+                    <div class="col-md-3">
+                        <div class="box-produto">
+                            <div class="prod-header prod-1"></div>
+                            <div class="descricao">
+                                <p class="destaque">Café Espresso</p>
+                                <!--<p class="prod-preco">Adicional</p>-->
+                                <p class="texto"><i class="fa fa-check"> Pequeno R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Médio R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Grande R$--</i></p>
+                            </div>
+                            <button id="solicitar-prod-1" type="button" class="prod-solicitar">Solicitar</button>
+                        </div>
+                    </div>
+                    <!--produto 2-->
+                    <div class="col-md-3">
+                        <div class="box-produto">
+                            <div class="prod-header prod-2"></div>
+                            <div class="descricao">
+                                <p class="destaque">Capuccino</p>
+                                <p class="texto"><i class="fa fa-check"> Pequeno R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Médio R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Grande R$--</i></p>
+                            </div>
+                            <button id="solicitar-prod-2" type="button" class="prod-solicitar">Solicitar</button>
+                        </div>
+                    </div>
+
+                    <!--produto 3-->
+                    <div class="col-md-3">
+                        <div class="box-produto">
+                            <div class="prod-header prod-3"></div>
+                            <div class="descricao">
+                                <p class="destaque">Capuccino Trufado</p>
+                                <p class="texto"><i class="fa fa-check"> Pequeno R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Médio R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Grande R$--</i></p>
+                            </div>
+                            <button id="solicitar-prod-3" type="button" class="prod-solicitar">Solicitar</button>
+                        </div>
+                    </div>
+
+                    <!--prod quatro-->
+                    <div class="col-md-3">
+                        <div class="box-produto">
+                            <div class="prod-header prod-4"></div>
+                            <div class="descricao">
+                                <p class="destaque">Capuccino com Chocolate</p>
+                                <p class="texto"><i class="fa fa-times"> Opções</i></p>
+                                <p class="texto"><i class="fa fa-check"> Médio R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Grande R$--</i></p>
+                            </div>
+                            <button id="solicitar-prod-4" type="button" class="prod-solicitar">Solicitar</button>
+                        </div>
+                    </div>
+
+                    <!--prod cinco-->
+                    <div class="col-md-3">
+                        <div class="box-produto">
+                            <div class="prod-header prod-5"></div>
+                            <div class="descricao">
+                                <p class="destaque">Chocolate quente</p>
+                                <p class="texto"><i class="fa fa-times"> Acréscimo de chantilly</i></p>
+                                <p class="texto"><i class="fa fa-check"> Médio R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Grande R$--</i></p>
+                            </div>
+                            <button id="solicitar-prod-5" type="button" class="prod-solicitar">Solicitar</button>
+                        </div>
+                    </div>
+
+                    <!--prod seis-->
+                    <div class="col-md-3">
+                        <div class="box-produto">
+                            <div class="prod-header prod-6"></div>
+                            <div class="descricao">
+                                <p class="destaque">Capuccino com Doce de Leite</p>
+                                <p class="texto"><i class="fa fa-times"> Acréscimo de chantilly</i></p>
+                                <p class="texto"><i class="fa fa-check"> Médio R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Grande R$--</i></p>
+                            </div>
+                            <button id="solicitar-prod-6" type="button" class="prod-solicitar">Solicitar</button>
+                        </div>
+                    </div>
+
+                    <!--prod sete-->
+                    <div class="col-md-3">
+                        <div class="box-produto">
+                            <div class="prod-header prod-7"></div>
+                            <div class="descricao">
+                                <p class="destaque">White Mocha</p>
+                                <p class="texto"><i class="fa fa-times"> Opções</i></p>
+                                <p class="texto"><i class="fa fa-check"> Médio R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Grande R$--</i></p>
+                            </div>
+                            <button id="solicitar-prod-7" type="button" class="prod-solicitar">Solicitar</button>
+                        </div>
+                    </div>
+
+                    <!--prod oito-->
+                    <div class="col-md-3">
+                        <div class="box-produto">
+                            <div class="prod-header prod-8"></div>
+                            <div class="descricao">
+                                <p class="destaque">Latte</p>
+                                <p class="texto"><i class="fa fa-times"> Opções</i></p>
+                                <p class="texto"><i class="fa fa-check"> Médio R$--</i></p>
+                                <p class="texto"><i class="fa fa-check"> Grande R$--</i></p>
+                            </div>
+                            <button id="solicitar-prod-8" type="button" class="prod-solicitar">Solicitar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--formulário de reserva-->
+                <div id="formulario">
+                    <div class="formulario-conteudo">
+                        <div class="modal-body">
+                            <!--classe do bootstrap-->
+                            <span class="fechar">&times;</span>
+                            <label>Solicitar item selecionado</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                aria-describedby="text"
+                                placeholder="Digite a quantidade desejada"
+                            /><br />
+                            <p>Selecione uma forma de pagamento</p>
+                            <input type="checkbox" class="menu-pag" />
+                            <label for="options">Cartão</label>
+
+                            <input type="checkbox" class="menu-pag" />
+                            <label for="options">Dinheiro</label>
+
+                            <input type="checkbox" class="menu-pag" />
+                            <label for="options">Pix</label>
+                        </div>
+                        <div class="model-footer">
+                            <!--classe do bootstrap-->
+                            <button id="enviar" type="button" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+                <!--fim do formulário-->
+            </div>
+        </div>
+        <script type="text/javascript" src="src/script.js"></script>
+    </body>
+</html>
